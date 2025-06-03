@@ -15,11 +15,7 @@ def get_random_affirmation():
     """Returns a random affirmation from the list.""" # three double quotes for docstring to explain the function
     if not AFFIRMATIONS:
         return "No affirmations available."
-    print(random.choice(AFFIRMATIONS))
-
-
-get_random_affirmation()
-
+    return (random.choice(AFFIRMATIONS))
 
 
 
@@ -36,9 +32,19 @@ def add_affirmation(affirmation):
     print(f"added affirmation: {affirmation}") 
 
 
-userQuote = userAddedAffirmation()
-add_affirmation(userQuote)
 
+# create a loop of affirmations until user types stop
+def stopAffirmation():
+    while True:
+        reply = input("Type STOP at the end to exit or anything else to continue: ").strip()
+        if "stop" in reply.lower():
+            print("BYE FOR NOW!")
+            break
+        print(get_random_affirmation())
+
+userQuotes = userAddedAffirmation()
+add_affirmation(userQuotes)
+stopAffirmation()
 
 
     
