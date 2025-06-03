@@ -2,6 +2,16 @@ destinations = ['Italy', 'Ethiopia', 'Turkey', 'Greece', 'Mauritius', 'Kenya']
 myFoods = ['pizza', 'chicken', 'pie', 'rice', 'roti', 'spaghetti']
 yourFoods = myFoods[:] #adding the semicolon ensure The variables arent replacing each other
 
+print(f"original: {destinations} ")
+
+destinations.sort()
+print(f"Sorted destinations: {destinations}")
+
+destinations.sort(reverse=True)
+print(f"reverse sort destinations: {destinations}")
+
+destinations.reverse()
+print(f"reversed destinations: {destinations}")
 
 print(f"my fav foods are: {myFoods}")
 print(f"your fav foods are: {yourFoods}")
