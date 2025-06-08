@@ -16,11 +16,12 @@ def simpleCalculator():
             product = num1 * num2
             print("Result:", product)
         elif choice == '/':
-            if num2 == 0:
-                print('cannot divide by 0, try another number')
-            else:
+            try:
                 division = num1 / num2
                 print("Result:", division)
+            except ZeroDivisionError: # expects this error if user inputs 0
+                print('cannot divide by 0, try another number')
+
         else:
             print("invalid operator")
 
