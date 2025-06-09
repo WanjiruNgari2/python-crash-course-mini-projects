@@ -23,6 +23,6 @@ def simpleCalculator():
                 print('cannot divide by 0, try another number')
 
         else:
-            print("invalid operator")
+            print("invalid operator, try another")
 
 simpleCalculator()   
