@@ -2,7 +2,7 @@ def checkAge():
     while True:
         age = input("How old are you? (or type 'q' to quit): ")
         if age.lower() == 'q':
-            print("Goodbye!")
+            print("Goodbye For now!")
             break
 
         try:
