@@ -6,7 +6,7 @@ def checkColor():
         color = input("Guess the alien's color or type q to quit:"
         "")
         if color.lower() == 'q':
-            print('Bye Player!')
+            print('Bye For Now Player!')
             break
         if color not in alienColors:
                 print('color unknown!')
